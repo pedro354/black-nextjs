@@ -11,7 +11,7 @@ import Head from "next/head";
       </Head>
       <main>
         <h1>
-          Welcome to <a href="http://nextjs.org">NextJS</a>
+          Welcome to a <a href="http://nextjs.org">NextJS</a>
         </h1>
 
         <p>
