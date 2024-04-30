@@ -9,7 +9,7 @@ interface ApiResponse {
 // define a função getServerSideProps e a exporta para que possa ser utilizada em outros arquivos. Ela também especifica que essa função deve retornar uma Promise que eventualmente resolverá um objeto com props para a página.
 export const  getServerSideProps: GetServerSideProps = async () => {
     // utiliza fetch para fazer uma requisição HTTP GET para uma URL específica definida em uma variável de ambiente NEXT_PUBLIC_APIURL. A resposta da requisição é convertida para JSON e atribuída à variável serverSideData, que parece ser do tipo ApiResponse.
-    const serverSideData: ApiResponse = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/hello`).then(res => res.json())
+    const serverSideData: ApiResponse = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/hello`).then(res => res.json()) 
     // retorna um objeto contendo as props que serão passadas para a página. Neste caso, apenas uma propriedade chamada serverSideData está sendo passada, contendo os dados obtidos do servidor na etapa anterior.
     return {
         props: {
