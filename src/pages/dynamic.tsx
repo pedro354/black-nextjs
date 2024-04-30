@@ -15,7 +15,7 @@ export const  getServerSideProps: GetServerSideProps = async () => {
         props: {
             serverSideData
         }
-    }
+    }//a
 }
 
 const Dynamic: NextPage = (props:{
